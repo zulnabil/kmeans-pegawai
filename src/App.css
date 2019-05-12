@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+  color: white;
+  background-color: #282c34;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Initial-table {
+  width: 45%;
+  padding: 30px 3%;
+}
+
+.Cluster-table {
+  margin-left: -400px;
+  width: 55%;
+  padding: 30px 3%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Cluster-table-run {
+  margin-left: 0px;
+  width: 55%;
+  padding: 30px 3%;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1s, opacity 1s, margin 1s ease-out;
+}
+
+.table-convertdata {
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 70%;
+  margin: 0 auto 0;
+  transition: margin 1s linear;
+}
+
+.table-convertdata-isopen {
+  max-height: 300px;
+  overflow-y: scroll;
+  margin: 0 auto 30px;
+  transition: margin 1s ease-in;
+  width: 70%;
+}
+
+.desc-cluster {
+  margin-top: 30px;
+}
+
+.label-form {
+  /* float: left; */
+  font-size: 16px;
+  margin: auto;
+}
+
+.button-form {
+  margin-top: 15px;
+}
+
+* {
+  font-size: 16px;
+}
+
+.title-app {
+  padding: 50px 0 0;
+}
+
+.form-centroid {
+  margin-top: 30px;
+}
+
+.form-initialtable {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.form-clustertable {
+  margin-top: -2px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.lbl-initialtable {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.lbl-clustertable {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.btn-normalisasi {
+  /* margin-left: 80px; */
+  /* display: flex; */
+  /* position: absolute;   */
+  float: right;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.btn-normalisasi-none {
+  display: none;
+}
+
+.btn-denormalisasi {
+  border-radius: 5px;
+  margin-left: 10px;
+  float: right;
+}
+
+.collapse-table {
+  display: flex;
+  margin: auto;
+  /* width: 70%; */
+}
